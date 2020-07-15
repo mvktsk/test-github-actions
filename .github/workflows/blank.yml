@@ -17,8 +17,8 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
 
     - name: Repository Dispatch
-        uses: peter-evans/repository-dispatch@v1
-        with:
+      uses: peter-evans/repository-dispatch@v1
+      with:
           token: ${{ secrets.WEBHOOK }}
           repository: mvktsk/github-actions
           event-type: my-event
