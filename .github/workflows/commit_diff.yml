@@ -18,7 +18,7 @@ jobs:
     steps:
     - name: Get Commit Difference Count Between Two Branches
       id: cdc
-      uses: jessicalostinspace/commit-difference-action@v1.0.0
+      uses: mvktsk/commit-difference-action@v1.0.0
       with:
-        base-branch: 'dev' 
-        secondary-branch: 'master'
+        base-branch: 'master' 
+        secondary-branch: 'dev'
