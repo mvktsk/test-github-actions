@@ -13,10 +13,13 @@ jobs:
         fetch-depth: 0
 
     - name: Get Image Version
-      uses: mvktsk/github-actions/get-image-version@master
+#      uses: mvktsk/github-actions/get-image-version@master
+      uses: VirtoCommerce/vc-github-actions/get-image-tag@master
       id: image
 
     - name: Show version
       shell: pwsh
       run: |
-        Write-Output ${{ steps.image.outputs.fullVersion }}
+        Write-Output ${{ steps.image.outputs.tag }}
+#        Write-Output ${{ steps.image.outputs.fullVersion }}
+
